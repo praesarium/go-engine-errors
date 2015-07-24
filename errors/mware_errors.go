@@ -7,7 +7,7 @@ import (
 )
 
 func MiddlewareErrors(renderer engine.Renderer) engine.Middleware {
-	var httpStatusCode string
+	var httpStatusCode int
 	var httpMessage    string
 
 	return func(c *engine.Context) {
